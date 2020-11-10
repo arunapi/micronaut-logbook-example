@@ -27,6 +27,12 @@ dependencies {
     implementation("javax.annotation:javax.annotation-api")
     implementation("io.micronaut:micronaut-http-client")
     runtimeOnly("ch.qos.logback:logback-classic")
+    implementation(platform("org.zalando:logbook-bom:2.1.2"))
+
+    implementation("org.zalando:logbook-core")
+    implementation("org.zalando:logbook-json")
+    implementation("org.zalando:logbook-logstash")
+    implementation("org.zalando:logbook-netty")
 }
 
 mainClassName = "micronaut.logbook.example.Application"

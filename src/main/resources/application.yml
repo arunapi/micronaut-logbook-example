@@ -1,3 +1,9 @@
 micronaut:
   application:
     name: micronautLogbookExample
+
+logging:
+  level:
+    org:
+      zalando:
+        logbook: TRACE
