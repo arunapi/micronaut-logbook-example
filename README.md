@@ -4,10 +4,12 @@ Created project using mn cli
 ```shell script
 mn create-app --jdk=14 --test=spock micronaut-logbook-example
 ```
-Create a `HelloController` like the (micronaut example)[https://github.com/micronaut-projects/micronaut-examples/blob/master/hello-world-java/src/main/java/example/HelloController.java]
+Create a `HelloController` like the [micronaut example](https://github.com/micronaut-projects/micronaut-examples/blob/master/hello-world-java/src/main/java/example/HelloController.java)
 
-Create `HelloControllerSpec` for the hello endpoint like the one in the groovy (example)[https://github.com/micronaut-projects/micronaut-examples/tree/master/hello-world-groovy/src/test/groovy/example]
+Create `HelloControllerSpec` for the hello endpoint like the one in the groovy [example](https://github.com/micronaut-projects/micronaut-examples/tree/master/hello-world-groovy/src/test/groovy/example)
+
 Create the supporting `HelloClient` class
+
 
 Add logbook dependency 
 ```
@@ -31,3 +33,4 @@ Remove `@Requires(beans = Logbook.class)` and update the constructor as follows
     }
 ```
 
+Create the keep alive tests to reproduce the issue.
